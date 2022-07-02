@@ -2,9 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*
 * *main - check if a random number is positive or negative
-*
 * * Return: 0 if error
 */
 int main(void)
@@ -13,7 +11,7 @@ int main(void)
 	int nLast;
 
 	srand(time(0));
-	n = rand() - RAND_MAX /2;
+	n = rand() - RAND_MAX / 2;
 	nLast = n % 10;
 
 	if (nLast > 5)
