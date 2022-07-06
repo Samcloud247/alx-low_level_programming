@@ -1,19 +1,16 @@
-#include "main.h"
+#include "_putchar.h"
 /**
 * *main - this program prints _putchar
 * *Return: (0) if successful
 */
 int main(void)
 {
-	char var[] = "_putchar";
-	int ii;
-
+	char *var = "_putchar";
+	while (*var)
 /*length of the array var*/
-	int lenVar = sizeof(var) / sizeof(var[0]);
-
-	for (ii = 0; ii < lenVar - 1; ii++)
 	{
-		_putchar(var[ii]);
+		_putchar(*var);
+		var++;
 	}
 		_putchar('\n');
 	return (0);
